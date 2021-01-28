@@ -3,16 +3,10 @@ $width: 1366;
 // Import
 //  * ---------------------------------------
 @import "_Zero.scss";
+@import "_header.scss";
 @import "_Global.scss";
+@import "_main.scss";
+@import "_footer.scss";
 
 /* Stule CSS
  * --------------------------------------- */
-
-
-/* стили шапки */
-
-#canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-}

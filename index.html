@@ -2,42 +2,69 @@
 <html lang="ru">
 
 <head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tab -->
-    <title>ProTour</title>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tab -->
+	<title>ProTour</title>
 
-    <!-- Style -->
-    <link rel="stylesheet" href="Css/Style.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="Css/Style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <!--* Шапка -->
-        <header class="header">
-            <div class="wrap">
+	<!-- загрузочный экран -->
+	<div id="preloader">
+		<svg viewBox="0 0 800 600">
+			<symbol id="s-text">
+				<text text-anchor="middle" x="50%" y="35%" class="text--line">
+					Пожалуйста
+				</text>
+				<text text-anchor="middle" x="50%" y="68%" class="text--line2">
+					Подождите
+				</text>
 
-            </div>
-        </header>
+			</symbol>
 
-        <!--* Тело сайта -->
-        <main class="main">
-            <div class="wrap">
+			<g class="g-ants">
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+			</g>
 
-            </div>
-        </main>
 
-        <!--* подвал -->
-        <footer class="footer">
-            <div class="wrap">
+		</svg>
+		<div id="loader"></div>
+	</div>
+	<div class="wrapper">
+		<!--* Шапка -->
+		<header class="header">
+			<div class="wrap">
 
-            </div>
-        </footer>
-    </div>
-    <!-- Script -->
-    <script type="text/javascript" src="script/jQuery 3.5.1.js"></script>
-    <script type="text/javascript" src="script/Script.js"></script>
+			</div>
+		</header>
+
+		<!--* Тело сайта -->
+		<main class="main">
+			<div class="wrap">
+
+			</div>
+		</main>
+
+		<!--* подвал -->
+		<footer class="footer">
+			<div class="wrap">
+
+			</div>
+		</footer>
+	</div>
+	<!-- Script -->
+	<script type="text/javascript" src="script/jQuery 3.5.1.js"></script>
+	<script src="script/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="script/Script.js"></script>
+
 </body>
 
 </html>

@@ -13,11 +13,37 @@
 </head>
 
 <body>
+    <!--* загрузочный экран -->
+    <div id="preloader">
+        <svg viewBox="0 0 800 600">
+			<symbol id="s-text">
+				<text text-anchor="middle" x="50%" y="35%" class="text--line">
+					Пожалуйста
+				</text>
+				<text text-anchor="middle" x="50%" y="68%" class="text--line2">
+					Подождите
+				</text>
 
+			</symbol>
+
+			<g class="g-ants">
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+
+
+		</svg>
+        <div id="loader"></div>
+    </div>
+
+    <!-- Контент -->
     <div class="wrapper">
         <!--* Шапка -->
         <header class="header">
-            <div id="header">
+            <div class="wrap">
 
             </div>
         </header>
@@ -38,7 +64,9 @@
     </div>
     <!-- Script -->
     <script type="text/javascript" src="script/jQuery 3.5.1.js"></script>
+    <script src="script/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="script/Script.js"></script>
+
 </body>
 
 </html>

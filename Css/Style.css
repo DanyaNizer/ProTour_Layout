@@ -1,1 +1,217 @@
-html{font-size:16px}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}a{text-decoration:none}table{border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}strong{font-weight:bold}ol,ul{list-style:none;margin:0;padding:0}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;margin:0;padding:0;color:#444}q:before,q:after{content:""}abbr,acronym{border:0}.wrapper{position:absolute;top:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.wrap{max-width:1366px;width:100%;background:red}#canvas{position:fixed;display:block;width:100%;height:100%;background:-webkit-gradient(linear, left top, left bottom, from(#ffa3a3), to(#ffa872));background:linear-gradient(to bottom, #ffa3a3 0%, #ffa872 100%)}
+html {
+	font-size: 16px;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+table {
+	border-spacing: 0;
+}
+fieldset,
+img {
+	border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-weight: normal;
+	font-style: normal;
+}
+strong {
+	font-weight: bold;
+}
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+caption,
+th {
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	color: #444;
+}
+q:before,
+q:after {
+	content: "";
+}
+abbr,
+acronym {
+	border: 0;
+}
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.wrap {
+	max-width: 1366px;
+	width: 100%;
+	background: red;
+}
+#canvas {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffa3a3), to(#ffa872));
+	background: linear-gradient(to bottom, #ffa3a3 0%, #ffa872 100%);
+}
+
+/* Загрузочный экран */
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #0f1215;
+	z-index: 9999999;
+	height: 100%;
+	width: 100%;
+	font: 8em/1 Arial;
+}
+.no-js #preloader,
+.oldie #preloader {
+	display: none;
+}
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin-left: -30px;
+	margin-top: -30px;
+	padding: 0;
+	background-color: #05bca9;
+	border-radius: 100%;
+	-webkit-animation: sk-scaleout 3s infinite ease-in-out;
+	animation: sk-scaleout 3s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+	0% {
+		-webkit-transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 0;
+	}
+}
+@keyframes sk-scaleout {
+	0% {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+.text--line {
+	font-size: 0.5em;
+}
+
+svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.text-copy {
+	fill: none;
+	stroke: white;
+	stroke-dasharray: 7% 28%;
+	stroke-width: 3px;
+	-webkit-animation: stroke-offset 45s infinite linear;
+	animation: stroke-offset 45s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+	stroke: white;
+	stroke-dashoffset: 7%;
+}
+
+.text-copy:nth-child(2) {
+	stroke: white;
+	stroke-dashoffset: 14%;
+}
+
+.text-copy:nth-child(3) {
+	stroke: white;
+	stroke-dashoffset: 21%;
+}
+
+.text-copy:nth-child(4) {
+	stroke: white;
+	stroke-dashoffset: 28%;
+}
+
+.text-copy:nth-child(5) {
+	stroke: white;
+	stroke-dashoffset: 35%;
+}
+
+@keyframes stroke-offset {
+	50% {
+		stroke-dashoffset: 35%;
+		stroke-dasharray: 0 87.5%;
+	}
+}

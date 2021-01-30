@@ -10,6 +10,12 @@ $width: 1366;
 
 /* Stule CSS
  * --------------------------------------- */
+html,
+body {
+	height: 100% !important;
+	width: 100% !important;
+}
+
 //  загрузочный экран
 #preloader {
 	position: fixed;
@@ -79,12 +85,6 @@ svg {
 		stroke-dasharray: 0 87.5%;
 	}
 }
-
-BODY {
-	background: hsl(200, 70, 11);
-	background-size: 0.12em 100%;
-}
-
 .text--line {
 	font-size: 0.5em;
 }

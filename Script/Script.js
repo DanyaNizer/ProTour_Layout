@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 	var HeaderTop = $('#header').offset().top;
 
@@ -10,14 +12,10 @@ $(document).ready(function () {
 	});
 });
 
-"use strict";
+
 
 
 // загрузочный экран
-(function ($) {
-	$(window).load(function () {
-		$("#loader").fadeOut("slow", function () {
-			$("#preloader").delay(3500).fadeOut("slow");
-		});
-	})
-})(jQuery);
+$(function () {
+	$('#preloader').delay(3500).fadeOut('slow');
+});

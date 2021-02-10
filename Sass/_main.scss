@@ -2,41 +2,6 @@
  * --------------------------------------- */
 
 .slick {
-<<<<<<< HEAD
-	&__slider {
-	}
-	&__block {
-		position: relative;
-		& img {
-			width: 100%;
-		}
-		& h3 {
-			position: absolute;
-			z-index: 10000;
-			font-size: 40px;
-			color: #fff;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-family: "Arimo";
-		}
-		& h4 {
-			position: absolute;
-			z-index: 10000;
-			font-size: 40px;
-			color: #fff;
-			left: 50%;
-			top: 60%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			font-family: "Arimo";
-		}
-	}
-}
-#ittHSinfo .itt_hi_close svg {
-	right: 6px;
-}
-=======
     &__slider {}
     &__block {
         position: relative;
@@ -68,4 +33,3 @@
         }
     }
 }
->>>>>>> 3e5d4d7654028c53a4ca487951debbcdfede13da

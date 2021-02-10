@@ -4,19 +4,22 @@ $width: 1366;
 /* Global CSS
  * --------------------------------------- */
 
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
 .wrapper {
 	position: absolute;
 	top: 0;
 	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	width: 100%;
-	height: 100%;
 }
 
 .wrap {
 	max-width: 1366px;
 	width: 100%;
+	height: auto;
+	margin: 0 auto;
 }

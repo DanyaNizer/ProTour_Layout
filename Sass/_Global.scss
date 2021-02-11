@@ -3,7 +3,9 @@ $width: 1366;
 
 /* Global CSS
  * --------------------------------------- */
-
+* {
+	outline: none !important;
+}
 html,
 body {
 	width: 100%;
@@ -15,6 +17,7 @@ body {
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: #ebcbae;
 }
 
 .wrap {
@@ -22,4 +25,7 @@ body {
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
+}
+* {
+	outline: none !important;
 }

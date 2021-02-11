@@ -1,0 +1,40 @@
+// about us page style
+.wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		font-size: 90rem / $rem;
+		font-family: "Arimo";
+	}
+	h3 {
+		font-size: 60rem / $rem;
+		font-family: "Arimo";
+		margin-bottom: 4%;
+	}
+
+	.reviews__block {
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		p {
+			margin-top: 3%;
+			margin-bottom: 10%;
+			font-family: "Arimo";
+			font-size: 24rem / $rem;
+			text-align: center;
+		}
+	}
+	.block__img-position {
+		overflow: hidden;
+		min-width: 200px;
+		min-height: 200px;
+		max-width: 200px;
+		max-height: 200px;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

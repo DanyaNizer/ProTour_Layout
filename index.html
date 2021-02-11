@@ -28,9 +28,7 @@
 				<text text-anchor="middle" x="50%" y="68%" class="text--line2">
 					Подождите
 				</text>
-
 			</symbol>
-
 			<g class="g-ants">
 				<use xlink:href="#s-text" class="text-copy"></use>
 				<use xlink:href="#s-text" class="text-copy"></use>
@@ -38,8 +36,6 @@
 				<use xlink:href="#s-text" class="text-copy"></use>
 				<use xlink:href="#s-text" class="text-copy"></use>
 			</g>
-
-
 		</svg>
         <div id="loader"></div>
     </div>
@@ -49,17 +45,41 @@
 
         <!--* Шапка -->
         <header class="header">
-            <div class="wrap">
-                <!-- модуль поиска -->
-                <div id="itTourWidgetWrapper">
+            <div class="header__top-info-bg">
+                <div class="wrap">
+                    <div class="header__top-info">
+
+                        <div class="header__logo">
+                            <a href="#"><img src="Img/logo.png" alt="Логотип NoVo TuR"></a>
+                        </div>
+
+                        <div class="header__fon">
+                            <ul>
+                                <li>+380-50-996-3333</li>
+                                <li>+380-50-996-3333</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <script id="itTourWidgetScriptJsx" tourTab="1" guidedTab="1" ticketsTab="1" src="https://www.ittour.com.ua/tour_search.jsx?id=20873DG0241294206O983808&ver=3"></script>
             </div>
+            <div id="header">
+                <nav class="header__top-nav">
+                    <div class="wrap">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Горячие туры</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
         </header>
 
         <!--* Тело сайта -->
         <main class="main">
-            <!-- дальше слик слайдер -->
+            <!-- слик слайдер -->
             <div class="slick">
                 <div class="slick__slider">
                     <div class="slick__block">
@@ -81,15 +101,13 @@
             </div>
 
             <div class="wrap">
-
-
+                <!-- модуль поиска -->
+                <div id="itTourWidgetWrapper"></div>
+                <script id="itTourWidgetScriptJsx" tourTab="1" guidedTab="1" ticketsTab="1" src="https://www.ittour.com.ua/tour_search.jsx?id=20873DG0241294206O983808&ver=3"></script>
 
                 <!-- модуль витрины  -->
                 <div id="showcase_hottour_v2_showcase_module"></div>
                 <script src="https://www.ittour.com.ua/showcase_search.jsx?id=8D315G99201725232779279O5&type=103&num=1"></script>
-
-
-
             </div>
         </main>
 
@@ -113,6 +131,7 @@
             var tag_head = document.getElementsByTagName('head');
             tag_head[0].appendChild(tag_css);
         </script>
+
     </div>
 </body>
 

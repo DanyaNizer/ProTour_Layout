@@ -17,7 +17,7 @@
 
 // загрузочный экран
 $(function () {
-	$('#preloader').delay(3500).fadeOut('slow');
+	$('#preloader').delay(1500).fadeOut('slow');
 });
 
 
@@ -44,4 +44,12 @@ $('.slick__slider').slick({
 			}
 		}
 	]
+});
+$(document).ready(function () {
+	$('a[href^="#down"], *[data-href^="#down"]').on('click', function (e) {
+		e.preventDefault();
+		var t = 1000;
+		var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+		$('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+	});
 });

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tab -->
+	<title>Назание компании низкие цены</title>
+
+	<!-- Style -->
+	<link rel="stylesheet" href="../Css/minprice.css">
+	<link rel="stylesheet" href="../Css/aos.css">
+	<link rel="stylesheet" href="../Css/preloader.css">
+	<link rel="stylesheet" href="../Css/slick.css">
+	<link rel="stylesheet" href="../../Css/slick-theme.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- загрузочный экран -->
+	<div id="preloader">
+		<svg viewBox="0 0 800 600">
+			<symbol id="s-text">
+				<text text-anchor="middle" x="50%" y="35%" class="text--line">
+					Пожалуйста
+				</text>
+				<text text-anchor="middle" x="50%" y="68%" class="text--line2">
+					Подождите
+				</text>
+
+			</symbol>
+
+			<g class="g-ants">
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+				<use xlink:href="#s-text" class="text-copy"></use>
+			</g>
+
+
+		</svg>
+		<div id="loader"></div>
+	</div>
+	<!-- Контент -->
+	<div class="wrapper">
+
+
+		<!--* Шапка -->
+		<header class="header">
+		</header>
+
+		<!--* Тело сайта -->
+		<main class="main">
+			<div class="wrap">
+				<div class="text-block">
+					<h2>Заголовк</h2>
+					<p>Очень интересный и продающий текст!</p>
+				</div>
+				<div id="itTourPriceWidgetWrapper"></div>
+				<script id="itTourPriceWidgetScript" enableBuy="false" viewType="large" priceButton="undefined"
+					widgetZIndex="10" activeTab="tour" lang="ru" currency_uah="1" showcase_number="1" charset="utf-8"
+					theme="https://ittour.com.ua/classes/handlers/ittour_external_modules/ittour_modules/min_price_v2/min_price/css/gray.css"
+					src="https://ittour.com.ua/classes/handlers/ittour_external_modules/ittour_modules/min_price_v2/min_price/js/widget.js?token=8D315G99201725232779279O5"
+					module_paysystem="liqpay" paysystem_client_pay="0" paysystem_commission=""></script>
+
+			</div>
+	</div>
+	</main>
+
+
+
+	<!--подвал -->
+	<footer class=" footer">
+		<div div class="wrap">
+
+		</div>
+	</footer>
+	<!--Script -->
+	<script src="../Script/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="../Script/slick.min.js"></script>
+	<script src='../Script/Script.js'></script>
+
+	<script>
+		var tag_css = document.createElement('link');
+		tag_css.rel = 'stylesheet';
+		tag_css.href = '../Css/Style.css'; // здесь указывается URL стилевого файла
+		tag_css.type = 'text/css';
+		var tag_head = document.getElementsByTagName('head');
+		tag_head[0].appendChild(tag_css);
+	</script>
+	</div>
+</body>
+
+</html>

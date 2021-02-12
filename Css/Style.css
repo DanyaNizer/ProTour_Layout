@@ -331,7 +331,7 @@ body {
   max-width: 60%;
   min-width: 280px;
   margin: 0 auto;
-  margin-bottom: 30%;
+  padding-bottom: 30%;
 }
 
 .rewies h2 {
@@ -478,26 +478,28 @@ body {
   src: url("../font/ProximaNovaExCn-Bold.ttf");
 }
 
-.wrap {
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
-.wrap h2 {
+.about h2 {
   font-size: 5.625rem;
   font-family: Proxima-Bold;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
+  color: white;
 }
 
-.wrap .reviews__position {
+.about .reviews__position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,12 +507,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 1366px;
+  max-width: 1366px;
 }
 
-.wrap .reviews__position img {
+.about .reviews__position img {
   width: 50%;
-  height: 100vh;
+  height: auto;
 }
 
 .background-aboutus {
@@ -587,5 +589,88 @@ body {
 }
 
 /* style min price page */
+@font-face {
+  font-family: "Proxima-Regular";
+  src: url("../font/ProximaNova-RegularIt.ttf");
+}
+
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url("../font/ProximaNovaExCn-Bold.ttf");
+}
+
+.backgound-minprice {
+  background-image: url("../minprice/img/pexels-photo-1098365.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 1441px) {
+  .backgound-minprice {
+    background-size: 127%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .backgound-minprice {
+    background-size: 176%;
+  }
+}
+
+.minprice {
+  width: 100%;
+}
+
+.minprice .minprice__main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.minprice .minprice__main-text h2 {
+  font-size: 3.75rem !important;
+  font-family: "Proxima-Bold";
+}
+
+@media screen and (max-width: 425px) {
+  .minprice .minprice__main-text h2 {
+    font-size: 5rem !important;
+  }
+}
+
+.minprice .minprice__main-text h3 {
+  font-size: 2.5rem;
+  font-family: "Proxima-Regular";
+  margin: 3% 0 5% 0;
+}
+
+@media screen and (max-width: 425px) {
+  .minprice .minprice__main-text h3 {
+    font-size: 1.875rem;
+  }
+}
+
+.fd_price {
+  margin: 0 auto;
+  max-width: 1300px;
+  border-radius: 10px;
+}
+
+.fd_price-header {
+  border-radius: 10px;
+}
+
+.fd_price-main {
+  height: auto !important;
+}
+
 /* Stule CSS
  * --------------------------------------- */

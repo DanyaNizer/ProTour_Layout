@@ -1,3 +1,56 @@
 /* style min price page */
+@font-face {
+	font-family: "Proxima-Regular";
+	src: url("../font/ProximaNova-RegularIt.ttf");
+}
+@font-face {
+	font-family: "Proxima-Bold";
+	src: url("../font/ProximaNovaExCn-Bold.ttf");
+}
+.backgound-minprice {
+	background-image: url("../minprice/img/pexels-photo-1098365.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	@media screen and (max-width: 1441px) {
+		background-size: 127%;
+	}
+	@media screen and (max-width: 1025px) {
+		background-size: 176%;
+	}
+}
+.minprice {
+	width: 100%;
+	.minprice__main-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		h2 {
+			font-size: 60rem / $rem !important;
+			font-family: "Proxima-Bold";
+			@media screen and (max-width: 425px) {
+				font-size: 80rem / $rem !important;
+			}
+		}
+		h3 {
+			font-size: 40rem / $rem;
+			font-family: "Proxima-Regular";
+			margin: 3% 0 5% 0;
+			@media screen and (max-width: 425px) {
+				font-size: 30rem / $rem;
+			}
+		}
+	}
+}
+
 .fd_price {
+	margin: 0 auto;
+	max-width: 1300px;
+	border-radius: 10px;
+}
+.fd_price-header {
+	border-radius: 10px;
+}
+.fd_price-main {
+	height: auto !important;
 }

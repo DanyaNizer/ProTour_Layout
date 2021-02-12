@@ -28,6 +28,8 @@ $('.slick__slider').slick({
 	slidesToScroll: 1,
 	arrows: false,
 	dots: true,
+	autoplay: true,
+	autoplaySpeed: 4000,
 	lazyLoad: 'ondemand',
 	responsive: [{
 		breakpoint: 768,
@@ -43,6 +45,18 @@ $('.slick__slider').slick({
 	}
 	]
 });
+
+
+
+$('.rewies__slider').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true
+})
+
+
 $(document).ready(function () {
 	$('a[href^="#down"], *[data-href^="#down"]').on('click', function (e) {
 		e.preventDefault();

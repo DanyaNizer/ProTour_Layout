@@ -1,8 +1,7 @@
 /* Reset CSS
  * --------------------------------------- */
-
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body,
@@ -28,21 +27,21 @@ p,
 blockquote,
 th,
 td {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 table {
-    border-spacing: 0;
+  border-spacing: 0;
 }
 
 fieldset,
 img {
-    border: 0;
+  border: 0;
 }
 
 address,
@@ -54,24 +53,24 @@ em,
 strong,
 th,
 var {
-    font-weight: normal;
-    font-style: normal;
+  font-weight: normal;
+  font-style: normal;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 ol,
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 caption,
 th {
-    text-align: left;
+  text-align: left;
 }
 
 h1,
@@ -80,298 +79,513 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: normal;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    color: #444;
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #444;
 }
 
 q:before,
 q:after {
-    content: "";
+  content: "";
 }
 
 abbr,
 acronym {
-    border: 0;
+  border: 0;
 }
 
 html,
 body {
-    height: 100% !important;
-    width: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
 }
-
 
 /* header.scss 
  * --------------------------------------- */
-
 .header {
-    display: block;
-    width: 100%;
+  width: 100%;
 }
 
+.header__top-info-bg {
+  background-color: #f9f9f9;
+}
+
+.header__top-info {
+  width: 100%;
+  height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 42px;
+}
+
+.header__logo {
+  overflow: hidden;
+  width: 70px;
+  margin-left: 50px;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header__fon {
+  margin-right: 50px;
+  line-height: 30px;
+  font-size: 1.125rem;
+  font-family: "Arimo";
+  font-weight: 400;
+}
+
+.header__top-nav {
+  font-family: "Arimo";
+  font-size: 1.25rem;
+}
+
+.header__top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top-nav ul li {
+  margin: 30px 25px;
+}
+
+.header__top-nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
 
 /* Global CSS
  * --------------------------------------- */
-
 * {
-    outline: none !important;
+  outline: none !important;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ebcbae;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ebcbae;
 }
 
 .wrap {
-    max-width: 1366px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+  max-width: 1366px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 * {
-    outline: none !important;
+  outline: none !important;
 }
 
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../font/ProximaNova-RegularIt.ttf");
+}
+
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url("../font/ProximaNovaExCn-Bold.ttf");
+}
 
 /* main_scss
  * --------------------------------------- */
+@font-face {
+  font-family: "Proxima-Regular";
+  src: url("../font/ProximaNova-RegularIt.ttf");
+}
+
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url("../font/ProximaNovaExCn-Bold.ttf");
+}
 
 .slick__block {
-    position: relative;
+  position: relative;
 }
 
 .slick__block .sblock-btndown {
-    position: absolute;
-    top: 92%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: "Arimo";
-    text-align: center;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Proxima-Regular";
+  text-align: center;
 }
 
 .slick__block .sblock-btndown h3 {
-    font-size: 2.75rem;
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
+  font-size: 2.75rem;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
 }
 
 .slick__block .sblock-btndown p {
-    font-size: 2.75rem;
-    text-decoration: none;
-    color: #000;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-animation: 2s ease-in-out infinite pulse;
-    animation: 2s ease-in-out infinite pulse;
+  font-size: 2.75rem;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: 2s ease-in-out infinite pulse;
+          animation: 2s ease-in-out infinite pulse;
 }
 
 @-webkit-keyframes pulse {
-    0% {
-        top: 5px;
-    }
-    50% {
-        top: 15px;
-    }
-    100% {
-        top: 5px;
-    }
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 5px;
+  }
 }
 
 @keyframes pulse {
-    0% {
-        top: 5px;
-    }
-    50% {
-        top: 15px;
-    }
-    100% {
-        top: 5px;
-    }
+  0% {
+    top: 5px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 5px;
+  }
 }
 
 .slick__block .sblock-btndown p img {
-    height: auto;
-    width: 50px;
+  height: auto;
+  width: 50px;
 }
 
 .slick__block img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
 }
 
 .slick__block h3 {
-    position: absolute;
-    z-index: 10000;
-    font-size: 5.625rem;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: "Arimo";
-    color: #fff;
+  position: absolute;
+  z-index: 10000;
+  font-size: 5.625rem;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Proxima-Bold";
+  color: #fff;
 }
 
 .slick__block h4 {
-    position: absolute;
-    z-index: 10000;
-    font-size: 3.75rem;
-    color: #fff;
-    left: 50%;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    font-family: "Arimo";
-    color: #fff;
+  position: absolute;
+  z-index: 10000;
+  font-size: 3.75rem;
+  color: #fff;
+  left: 50%;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Proxima-Regular";
+  color: #fff;
+}
+
+.background-wpap {
+  background-image: url("../Img/pexels-photo-1122408.jpeg");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.rewies {
+  max-width: 60%;
+  min-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30%;
+}
+
+.rewies h2 {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 0% !important;
+  font-size: 5rem !important;
+}
+
+.rewies .slick-slide {
+  text-align: center;
+  background: rgba(68, 68, 68, 0.3);
+  border-radius: 10px;
+}
+
+.rewies .slick-dots {
+  bottom: -7%;
+}
+
+.rewies .slider__block {
+  max-width: 920px !important;
+}
+
+.rewies .text-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+}
+
+.rewies .text-center p {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-family: "Proxima-Regular";
+}
+
+#ittHS .itt_hs_name {
+  font-size: 45px !important;
+  line-height: 80px !important;
 }
 
 #ittHSinfo .itt_hi_close svg {
-    right: 6px;
+  right: 6px;
 }
 
 #ittHS .itt_bg_color .itt_hs_header {
-    background: #b8d0da;
-    border-radius: 10px;
+  background: #b8d0da;
+  border-radius: 10px;
 }
 
+.nicescrollht-cursors {
+  width: 10px !important;
+  left: 7px;
+}
+
+@media screen and (max-width: 1025px) {
+  .wrap h2 {
+    font-size: 2.5rem !important;
+  }
+  .text-center p {
+    font-size: 1.125rem !important;
+  }
+  .rewies .text-center {
+    height: 195px;
+  }
+  .background-wpap {
+    background-size: 150%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .slick__block h4 {
+    font-size: 2.125rem;
+  }
+  .rewies .text-center {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .wrap h2 {
+    font-size: 1.875rem !important;
+  }
+  .rewies {
+    min-width: 320px;
+  }
+  .rewies .text-center {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slick__block h4 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .slick__block h3 {
+    font-size: 1.875rem;
+  }
+  .slick__block h4 {
+    font-size: 1.25rem;
+  }
+  .slick__block .sblock-btndown p {
+    font-size: 1.875rem;
+  }
+  .background-wpap {
+    background-size: 400%;
+    background-position-y: 140%;
+  }
+  .rewies h2,
+  p {
+    color: white;
+  }
+}
 
 /* header.scss
  * --------------------------------------- */
-
-
-/* style minprice page
- * --------------------------------------- */
-
-.fd_price {
-    margin: 0 auto;
-    border-radius: 10px;
-    max-width: 1300px !important;
+@font-face {
+  font-family: "Proxima-Regular";
+  src: url("../font/ProximaNova-RegularIt.ttf");
 }
 
-.fd_price-header {
-    border-radius: 10px;
-}
-
-.fd_price-main {
-    height: auto !important;
-}
-
-.text-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.text-block h2 {
-    font-size: 2.5rem;
-    font-family: "Arimo";
-    color: #40514e;
-}
-
-.text-block p {
-    font-size: 1.875rem;
-    font-family: "Arimo";
-    text-align: left;
-    width: 100%;
-    color: #40514e;
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url("../font/ProximaNovaExCn-Bold.ttf");
 }
 
 .wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrap h2 {
-    font-size: 5.625rem;
-    font-family: "Arimo";
+  font-size: 5.625rem;
+  font-family: Proxima-Bold;
+  margin-bottom: 10%;
 }
 
-.wrap h3 {
-    font-size: 3.75rem;
-    font-family: "Arimo";
-    margin-bottom: 4%;
+.wrap .reviews__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 1366px;
 }
 
-.wrap .reviews__block {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+.wrap .reviews__position img {
+  width: 50%;
+  height: 100vh;
 }
 
-.wrap .reviews__block p {
-    margin-top: 3%;
-    margin-bottom: 10%;
-    font-family: "Arimo";
-    font-size: 1.5rem;
-    text-align: center;
+.background-aboutus {
+  background-image: url("../aboutus/img/pexels-photo-408503.jpeg");
+  background-size: 150%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
-.wrap .block__img-position {
-<<<<<<< HEAD
+/* header.scss 
+ * --------------------------------------- */
+.header {
+  width: 100%;
+}
+
+.header__top-info-bg {
+  background-color: #f9f9f9;
+}
+
+.header__top-info {
+  width: 100%;
+  height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 42px;
+}
+
+.header__logo {
   overflow: hidden;
-  min-width: 200px;
-  min-height: 200px;
-  max-width: 200px;
-  max-height: 200px;
-  margin-right: 3%;
-=======
-    overflow: hidden;
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 200px;
-    max-height: 200px;
->>>>>>> 3669315e56e69b04f6e297a4cae7dabf754df334
+  width: 70px;
+  margin-left: 50px;
 }
 
-.wrap .block__img-position img {
-    height: 100%;
-    width: 100%;
+.header__logo img {
+  width: 100%;
+  height: 100%;
 }
 
+.header__fon {
+  margin-right: 50px;
+  line-height: 30px;
+  font-size: 1.125rem;
+  font-family: "Arimo";
+  font-weight: 400;
+}
 
+.header__top-nav {
+  font-family: "Arimo";
+  font-size: 1.25rem;
+}
+
+.header__top-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__top-nav ul li {
+  margin: 30px 25px;
+}
+
+.header__top-nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* style min price page */
 /* Stule CSS
  * --------------------------------------- */

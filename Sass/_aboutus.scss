@@ -1,38 +1,37 @@
 // about us page style
+@font-face {
+	font-family: "Proxima-Regular";
+	src: url("../font/ProximaNova-RegularIt.ttf");
+}
+@font-face {
+	font-family: "Proxima-Bold";
+	src: url("../font/ProximaNovaExCn-Bold.ttf");
+}
 .wrap {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	h2 {
 		font-size: 90rem / $rem;
-		font-family: "Arimo";
+		font-family: Proxima-Bold;
 		margin-bottom: 10%;
 	}
-
-	.reviews__block {
-		max-width: 1000px;
-		margin: 0 auto;
+	.reviews__position {
 		display: flex;
-		flex-direction: row;
-		padding-bottom: 5%;
-		p {
-			margin-top: 3%;
-			margin-bottom: 10%;
-			font-family: "Arimo";
-			font-size: 24rem / $rem;
-			text-align: center;
-		}
-	}
-	.block__img-position {
-		overflow: hidden;
-		min-width: 200px;
-		min-height: 200px;
-		max-width: 200px;
-		max-height: 200px;
-		margin-right: 3%;
+		justify-content: center;
+		text-align: center;
+		width: 1366px;
+
 		img {
-			height: 100%;
-			width: 100%;
+			width: 50%;
+			height: 100vh;
 		}
 	}
+}
+.background-aboutus {
+	background-image: url("../aboutus/img/pexels-photo-408503.jpeg");
+	background-size: 150%;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
 }
